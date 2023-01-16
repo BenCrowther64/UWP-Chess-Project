@@ -10,58 +10,60 @@
 
     <Grid>
         <Image Stretch="Fill" Source="Assets\Menu\pexels-george-becker-112854.jpg"/>
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-            <StackPanel Orientation="Vertical">
-                <TextBlock HorizontalAlignment="Center" Text="CHESS" FontSize="100" FontFamily="Century Gothic"/>
-                <Button HorizontalAlignment="Center" Content="Play" FontSize="80" Margin="0,15,0,0" FontFamily="Century Gothic" CornerRadius="10" Background="White" Click="Button_Click">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-                <Button HorizontalAlignment="Center" Content="Settings" FontSize="80" Margin="0,15,0,0" FontFamily="Century Gothic" CornerRadius="10" Background="Black" Foreground="White" Click="Button_Click_1">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="White"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="White"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-                <Button HorizontalAlignment="Center" Content="Quit" FontSize="80" Margin="0,15,0,0" FontFamily="Century Gothic" CornerRadius="10" Background="White" Click="Button_Click_2">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </StackPanel>
-        </Grid>
+        <Viewbox HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,200,200,200">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock HorizontalAlignment="Center" Text="CHESS" FontSize="100" FontFamily="Century Gothic"/>
+                    <Button HorizontalAlignment="Center" Content="Play" FontSize="80" Margin="0,15,0,0" FontFamily="Century Gothic" CornerRadius="10" Background="White" Click="Button_Click">
+                        <Button.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.ThemeDictionaries>
+                                    <ResourceDictionary x:Key="Dark">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                                    </ResourceDictionary>
+                                    <ResourceDictionary x:Key="Light">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                                    </ResourceDictionary>
+                                </ResourceDictionary.ThemeDictionaries>
+                            </ResourceDictionary>
+                        </Button.Resources>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Content="Settings" FontSize="80" Margin="0,15,0,0" FontFamily="Century Gothic" CornerRadius="10" Background="Black" Foreground="White" Click="Button_Click_1">
+                        <Button.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.ThemeDictionaries>
+                                    <ResourceDictionary x:Key="Dark">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="White"/>
+                                    </ResourceDictionary>
+                                    <ResourceDictionary x:Key="Light">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="White"/>
+                                    </ResourceDictionary>
+                                </ResourceDictionary.ThemeDictionaries>
+                            </ResourceDictionary>
+                        </Button.Resources>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Content="Quit" FontSize="80" Margin="0,15,0,0" FontFamily="Century Gothic" CornerRadius="10" Background="White" Click="Button_Click_2">
+                        <Button.Resources>
+                            <ResourceDictionary>
+                                <ResourceDictionary.ThemeDictionaries>
+                                    <ResourceDictionary x:Key="Dark">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                                    </ResourceDictionary>
+                                    <ResourceDictionary x:Key="Light">
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                                    </ResourceDictionary>
+                                </ResourceDictionary.ThemeDictionaries>
+                            </ResourceDictionary>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Viewbox>
     </Grid>
 </Page>

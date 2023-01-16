@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -28,11 +29,11 @@ namespace Chess
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(GamePage), null, new SlideNavigationTransitionInfo() { Effect = SlideNavigationTransitionEffect.FromRight });
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(SettingsPage), null, new SlideNavigationTransitionInfo() { Effect = SlideNavigationTransitionEffect.FromLeft });
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
